@@ -37,12 +37,10 @@ class TestPrimes < Minitest::Test
   end
 
   def test_500th_prime
-    skip
     assert_equal 3571, Prime.nth(500)
   end
 
   def test_big_prime
-    skip
     assert_equal 104_743, Prime.nth(10_001)
   end
 

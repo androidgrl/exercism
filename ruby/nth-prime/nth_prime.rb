@@ -1,17 +1,17 @@
 class Prime
-  def self.nth(num)
-    if num == 0
+  def self.nth(nth_prime)
+    if nth_prime == 0
       raise ArgumentError
     end
+
     i = 2
     nums = []
     primes = []
-    until primes.length == num
-      nums << i
-      primes = nums.select do |num|
-        [*2..num].none? do |divisor|
-          ((num % divisor == 0) && num != divisor)
-        end
+    until primes.length == nth_prime
+      if [*2..i].none? do |divisor|
+        ((i % divisor == 0) && i != divisor)
+      end
+      primes << i
       end
       i += 1
     end
