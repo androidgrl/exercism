@@ -1,5 +1,5 @@
 require 'minitest/autorun'
-require_relative 'roman_numerals'
+require_relative 'roman_numerals_2'
 require 'minitest/pride'
 
 class RomanTest < Minitest::Test
