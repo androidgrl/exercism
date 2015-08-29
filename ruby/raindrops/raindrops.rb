@@ -10,7 +10,7 @@ class Raindrops
       if num % 7 == 0
         answer << "Plong"
       end
-      if num % 3 != 0 && num % 5 != 0 && num % 7 != 0
+      if answer.empty?
         answer << num.to_s
       end
     answer.join
