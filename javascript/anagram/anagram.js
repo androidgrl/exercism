@@ -19,11 +19,3 @@ var anagram = function (word) {
     }
 };
 module.exports = anagram;
-
-
-//function addingSomething(argument) {
-//return "added" + argument;
-//}
-
-//addingSomething("hello")
-//addingSomething.call(null, "hello");
